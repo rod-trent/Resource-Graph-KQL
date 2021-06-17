@@ -1,0 +1,5 @@
+//Query to show all Log Analytics workspaces for a subscription
+
+resources
+| where type == "microsoft.operationalinsights/workspaces"
+| distinct name
